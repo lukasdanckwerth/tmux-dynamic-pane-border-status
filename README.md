@@ -1,0 +1,1 @@
+# tmux-dynamic-pane-border
