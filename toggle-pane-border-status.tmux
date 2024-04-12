@@ -35,7 +35,7 @@ tmux_bind_key() {
     local -r the_key=$(tmux_option "@toggle_pane_border_status_key" "P")
     local -r the_position=$(tmux_option "@toggle_pane_border_status_position" "top")
     local -r the_is_display_message=$(tmux_option "@toggle_pane_border_status_display_message" "1")
-    tmux bind-key -N 'Toggle pane border.' $the_key run-shell "$CURRENT_DIR/scripts/toggle-pane-border-status.sh ${the_position} ${toggle_pane_border_status_display_message}"
+    tmux bind-key -N 'Toggle pane border.' $the_key run-shell "$CURRENT_DIR/scripts/toggle-pane-border-status.sh ${the_position} ${the_is_display_message}"
 }
 
 is_enabled=$(tmux_option "@toggle_pane_border_status_automation_enabled" "1")
