@@ -6,13 +6,16 @@ Plugin that automatically hides the pane status if only one pane if visible.
 
 The following options are available to configure *tmux-dynamic-pane-border*.
 
-```shell
+```vim
+# set whether automativ border hide / show is enabled
+set -g @toggle_pane_border_status_automation_enabled 1
+
 # set whether dynamic pane border is enabled
-set -g @dynami_pane_border_enabled = 1
+set -g @toggle_pane_border_status_key_enabled 1
 
 # set the key mapping to toggle pane status
-set -g @dynami_pane_border_key = "P"
+set -g @toggle_pane_border_status_key 'P'
 
 # set the position of pane border status
-set -g @dynami_pane_border_position = "top"
+set -g @toggle_pane_border_status_position 'top'
 ```
