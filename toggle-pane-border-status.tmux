@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# exit immediately if apipeline returns a non-zero status
+# exit immediately if a pipeline returns a non-zero status
 set -e
 
 # receive current directory
