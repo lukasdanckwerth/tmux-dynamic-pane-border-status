@@ -30,6 +30,4 @@ set -g @dynamic_pane_border_status_position 'top'
 set -g @dynamic_pane_border_status_display_message 1
 ```
 
-## Licence
 
-[MIT Licence](LICENCE)
