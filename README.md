@@ -1,10 +1,13 @@
-# tmux-dynamic-pane-border
+# tmux-dynamic-pane-border-status
 
-Plugin that automatically hides the pane status if only one pane if visible.
+Plugin that automatically hides the pane status if only one pane if visible and toggles if multiple
+panes are shown. Also gives you a key to toggle the pane status manually.
+
+
 
 ## Configuration
 
-The following options are available to configure *tmux-dynamic-pane-border*.
+The following options are available to configure *tmux-dynamic-pane-border-status*.
 
 ```tmux
 # set whether automativ border hide / show is enabled
