@@ -14,7 +14,7 @@ The following options are available to configure *tmux-dynamic-pane-border-statu
 configuration also presents the defaults.
 
 ```tmux
-# set whether automativ border hide / show is enabled
+# set whether automatic border hide / show is enabled
 set -g @dynamic_pane_border_status_automation_enabled 1
 
 # set whether dynamic pane border is enabled
