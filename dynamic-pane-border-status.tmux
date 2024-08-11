@@ -16,10 +16,11 @@ tmux_option() {
 # auto hide pane-border-status line when only one pane is displayed (see tmux/tmux#566)
 tmux_add_toggle_pane_border_status_hooks() {
     local -r position=$(tmux_option "@dynamic_pane_border_status_position" "top")
+
     tmux set-hook -g 'after-new-window'   'run-shell -b "if [ \#{window_panes} -eq 1 ]; then tmux set pane-border-status off; fi"'
     tmux set-hook -g 'after-kill-pane'    'run-shell -b "if [ \#{window_panes} -eq 1 ]; then tmux set pane-border-status off; fi"'
     tmux set-hook -g 'pane-exited'        'run-shell -b "if [ \#{window_panes} -eq 1 ]; then tmux set pane-border-status off; fi"'
-    tmux set-hook -g 'after-split-window' 'run-shell -b "if [ \#{window_panes} -gt 1 ]; then tmux set pane-border-status $position; fi"'
+    tmux set-hook -g 'after-split-window' "run-shell -b 'if [ \#{window_panes} -gt 1 ]; then tmux set pane-border-status $position; fi'"
 }
 
 # bind key to toggle pane border
